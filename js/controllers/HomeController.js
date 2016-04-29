@@ -104,8 +104,38 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
+	$scope.like = function(number) 
+	{ 
+		return number++;
+	};
 	
+	$scope.dislike = function(number) 
+	{ 
+		$scope.dislikes = number++;
+		console.log("Dislike clicked");
+	};
 	
+	$scope.posterClick = function(number) 
+	{ 
+		console.log("Poster clicked");
+		if(number >3)
+		{
+			$scope.posterindex = number++;
+		}
+		else
+		{	
+			$scope.posterindex = 0;
+		}
+	};
+	
+	$scope.timeText = function(number) 
+	{ 
+		var hours = number / 60;
+		var min = number % 60;
+		var time = hours + "H " + min + "M";
+		return time;
+		
+	};
 	
 	
 	
