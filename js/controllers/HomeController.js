@@ -1,10 +1,5 @@
 app.controller('HomeController', ['$scope', function($scope) {
 	
-	
-	$scope.owner = “Dominic”;
-	$scope.title = “IMDB ” + $scope.owner + "'s Top 8 Movies";
-	$scope.githhub = "https://github.com/gangstapancake/is219s16mckenzie-p3"; 
-	
 	/* THESE ARE YOUR LIST OF MOVIES AND ACCOMPANYING METADATA
 	//	
 	// 	They are in the following format:
@@ -102,11 +97,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
-	
-	
-	
-	
-	
+	$scope.owner = "Dominic";
+	$scope.title = "IMDB " + $scope.owner + " \'s Top 8 Movies";
+	$scope.githhub = "https://github.com/gangstapancake/is219s16mckenzie-p3";
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
