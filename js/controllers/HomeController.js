@@ -87,6 +87,48 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
+	},
+    { 
+      title:	'Blue Streak', 
+      iscore:	6.3,
+      rating:	'PG-13',
+      runtime:	93,
+      released:	new Date('1993', '09', '17'),
+      country:	'USA',
+      posters:	['img/blue1.jpg','img/blue2.jpg','img/blue3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0181316',
+      website:	'http://www.rottentomatoes.com/m/blue_streak',
+      likes:	416,
+      dislikes:	220,
+      posterindex: 0
+	},
+    { 
+      title:	'Next Friday', 
+      iscore:	6.1,
+      rating:	'R',
+      runtime:	98,
+      released:	new Date('2000', '01', '12'),
+      country:	'USA',
+      posters:	['img/next1.jpg','img/next2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0195945',
+      website:	'https://en.wikipedia.org/wiki/Next_Friday',
+      likes:	978,
+      dislikes:	356,
+      posterindex: 0
+	},
+    { 
+      title:	'How High', 
+      iscore:	6.2,
+      rating:	'R',
+      runtime:	93,
+      released:	new Date('2001', '12', '21'),
+      country:	'USA',
+      posters:	['img/how1.jpg','img/how2.jpg','img/how3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0195945',
+      website:	'https://www.uphe.com/movies/how-high',
+      likes:	636,
+      dislikes:	299,
+      posterindex: 0
 	}
 	
 	
