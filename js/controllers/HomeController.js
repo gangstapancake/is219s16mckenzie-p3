@@ -160,8 +160,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	$scope.posterClick = function(number) 
 	{ 
-		console.log("Poster clicked");
-		if(number < 3)
+		if(number <= $scope.movies[number].posterindex.length)
 		{
 			$scope.movies[number].posterindex++; 
 		}
