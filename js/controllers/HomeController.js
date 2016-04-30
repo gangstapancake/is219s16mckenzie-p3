@@ -141,40 +141,43 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	$scope.owner = "Dominic";
 	$scope.title = "IMDB " + $scope.owner + " \'s Top 8 Movies";
-	$scope.githhub = "https://github.com/gangstapancake/is219s16mckenzie-p3";
+	$scope.github = "https://github.com/gangstapancake/is219s16mckenzie-p3";
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
 	$scope.like = function(number) 
 	{ 
-		return number++;
+		$scope.movies[number].likes++;
+		console.log("Like clicked");
 	};
 	
 	$scope.dislike = function(number) 
 	{ 
-		$scope.dislikes = number++;
+		$scope.movies[number].dislikes++;
 		console.log("Dislike clicked");
 	};
 	
 	$scope.posterClick = function(number) 
 	{ 
 		console.log("Poster clicked");
-		if(number >3)
+		if(number < 3)
 		{
-			$scope.posterindex = number++;
+			$scope.movies[number].posterindex++; 
 		}
 		else
 		{	
-			$scope.posterindex = 0;
+			$scope.movies[number].posterindex = 0;
 		}
+		
+		console.log("Poster clicked");
 	};
 	
 	$scope.timeText = function(number) 
 	{ 
 		var hours = number / 60;
 		var min = number % 60;
-		var time = hours + "H " + min + "M";
+		var time = parseInt(hours) + "H " + min + "M";
 		return time;
 		
 	};

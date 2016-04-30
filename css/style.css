@@ -48,7 +48,7 @@ body {
 	padding-right: 5px;
 }
 
-/* This stylizes your Title and Rating Text */
+/* This stylizes your Title and Rating Text ..... */
 .title,
 .released {
     color: #444;
@@ -135,7 +135,11 @@ body {
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
 
-
+/* Sets all images to the same size */
+#set{
+    height: 764px;
+	width: 514px;
+}
 
 
 
